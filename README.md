@@ -1,6 +1,6 @@
 # Influencer Strategy Pipeline (Starter)
 
-This is a **minimal, modular pipeline** to process your YouTube Shorts dataset:
+This is a out pipeline we used to extract the features for our multimodal anlysis from the youtube shorts we mined:
 - **ASR** with faster-whisper → word timestamps + language
 - **Audio features** (librosa) → Hard-Hitting Index (HHI)
 - **Visual intensity** (OpenCLIP zero-shot on frames)
