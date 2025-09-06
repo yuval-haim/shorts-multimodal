@@ -1,5 +1,4 @@
-# Influencer Strategy Pipeline (Starter)
-
+# Oct-7 videos multimodal anlysis 
 This is a out pipeline we used to extract the features for our multimodal anlysis from the youtube shorts we mined:
 - **ASR** with faster-whisper → word timestamps + language
 - **Audio features** (librosa) → Hard-Hitting Index (HHI)
@@ -31,10 +30,10 @@ pip install google-api-python-client requests
 ## 1) Project layout
 
 ```
-influencer_pipeline/
+pipeline/
   data/
-    videos.csv            # your metadata (place here)
-    raw/                  # your video_id/ subfolders with .mp4 + .wav (already present)
+    videos.csv            # videos metdata after download
+    raw/                  #  video_id/ subfolders with .mp4 + .wav 
     interim/              # transcripts, frame samples, etc.
     processed/            # feature tables, weekly panel
   src/
@@ -57,7 +56,7 @@ README.md
 ## 2) Order of execution
 
 ```powershell
-# From influencer_pipeline/
+# From pipeline/
 # A) Transcribe audio
 python -m src.asr_transcribe
 
@@ -83,6 +82,3 @@ python -m src.detect_trends
 
 Edit `src/config.py` to point to your folders and choose labels for visual zero-shot, model sizes, etc.
 
----
-
-**Note:** This repo ships with *stubs* to keep install friction low on Windows. Each script prints progress and writes CSV/Parquet into `data/processed`. You can iterate safely.
