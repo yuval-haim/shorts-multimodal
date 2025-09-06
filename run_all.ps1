@@ -1,7 +1,3 @@
-# Run the full pipeline (Windows PowerShell)
-# Usage: in PowerShell from influencer_pipeline\
-#   conda activate inflproj
-#   ./run_all.ps1
 
 python -m src.asr_transcribe
 python -m src.audio_features
