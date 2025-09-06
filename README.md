@@ -1,6 +1,6 @@
 # Oct‑7 Shorts — Multimodal Analysis Pipeline
 
-This repository extracts and analyzes **audio**, **vision**, and **text** signals from short‑form videos (YouTube Shorts/TikTok/IG Reels) related to the **Oct‑7 war period**. It produces monthly/weekly panels, interpretable topics, “visual buckets,” and trend/change‑point plots. The pipeline is reproducible end‑to‑end: **data gathering → preprocessing/cleaning → feature extraction → modeling → reporting**.
+This repository extracts and analyzes **audio**, **vision**, and **text** signals from short‑form "Youtube Reels" related to the **Oct‑7 war period**. It produces monthly/weekly panels, interpretable topics, “visual buckets,” and trend/change‑point plots. The pipeline is reproducible end‑to‑end: **data gathering → preprocessing/cleaning → feature extraction → modeling → reporting**.
 
 ---
 
@@ -53,8 +53,6 @@ pip install ruptures
 # PyTorch (CPU shown; install the CUDA wheel from pytorch.org if you have a GPU)
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 ```
-> **Note:** `ruptures` currently has the best wheels for Python ≤3.11. Prefer a 3.10/3.11 env.
-
 ---
 
 ## Project layout
