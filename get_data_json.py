@@ -4,7 +4,7 @@ from datetime import datetime
 from dotenv import load_dotenv
 
 load_dotenv()
-API_KEY = "AIzaSyBJ_FY1KJlxyKwJJWOKwzjrNBdVuP8ItmY"
+API_KEY = ""
 assert API_KEY, "Put YTB_API_KEY in .env"
 
 SEARCH_URL = "https://www.googleapis.com/youtube/v3/search"
@@ -119,3 +119,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
